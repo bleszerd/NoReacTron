@@ -20,7 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron public/electron.js\" \"yarn serverdev\"",
-    "serverdev": "node server/index.js"
+    "serverdev": "node server/index.js",
+    "dependencies": "concurrently \"BROWSER=none yarn\" \"cd server && yarn\""
   },
   "eslintConfig": {
     "extends": [
